@@ -2,32 +2,36 @@
  _（先安装git,不会的看这个https://zhuanlan.zhihu.com/p/443527549?utm_id=0&wd=&eqid=fb9c4f4d00004e780000000564804069）_ 
 
  _（先安装[Node.js](https://nodejs.org/en)，建议安装lts版本)用管理员打开终端，输入npm --v
-和图片上一致则安装成功![输入图片说明](.vscode/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-09-24%20200640.png)_ 
+和图片上一致则安装成功!![输入图片说明](https://vip.helloimg.com/images/2023/10/20/oTZi0c.png)
 
-![输入图片说明](.vscode/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-09-24%20150953.png)
+
 先打开VSCode，然后打开一个文件夹
-![输入图片说明](.vscode/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-09-24%20151240.png)
+![输入图片说明](https://vip.helloimg.com/images/2023/10/20/oTZdAS.png)
+
 然后打开终端
-![输入图片说明](.vscode/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-09-24%20151655.png)
+![输入图片说明](https://vip.helloimg.com/images/2023/10/20/oTZcGD.png)
+
 首先拉取git clone https://gitee.com/NeitherCupid139/godot.git
-![输入图片说明](.vscode/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-09-24%20151858.png)
+![输入图片说明](https://vip.helloimg.com/images/2023/10/20/oTZbxr.png)
+
 然后进入项目godot，输入cd godot
+![输入图片说明](https://vip.helloimg.com/images/2023/10/20/oTZMk1.png)
 
 在终端中输入npm i
 # 如何运行
 ### 在终端中输入npm run dev，打开网址就行
-![输入图片说明](.vscode/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-09-24%20152028.png)
+![输入图片说明](https://vip.helloimg.com/images/2023/10/20/oTZTaK.png)
+
 如果页面和图片中显示的一样，那么就成功了
-![输入图片说明](.vscode/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-09-24%20152129.png)
+![输入图片说明](https://vip.helloimg.com/images/2023/10/20/oTZWbb.png)
 
 # 如何开发
-![输入图片说明](.vscode/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-09-24%20152301.png)
 打开pages文件夹，找到你开发的网页的vue文件,然后在模板template中写html代码就行
-![输入图片说明](.vscode/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-09-24%20152457.png)
+![输入图片说明](https://vip.helloimg.com/images/2023/10/20/oTZnjq.png)
+![输入图片说明](https://vip.helloimg.com/images/2023/10/20/oTZ9Io.png)
 
 # 如何查看自己开发的页面
 在导航栏输入下面的网页
-![输入图片说明](.vscode/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-09-24%20203954.png)
 [这个代表首页](http://localhost:5173/)
 [这个代表关于页面](http://localhost:5173/about)
 [这个代表博客页面](http://localhost:5173/blog)
@@ -63,7 +67,7 @@
 
 1.`git add .` 
  
-2.`git commit  -m "吧啦吧啦"`  
+2.`git commit  -m "你要说明的内容"`  
 
 3.`git pull`  
 
