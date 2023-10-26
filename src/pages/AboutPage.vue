@@ -1,7 +1,10 @@
 <template>
-  <div>这是关于页</div>
+  <TabBar></TabBar>
+  <RouterView></RouterView>
 </template>
 
-<script setup></script>
+<script setup>
+import TabBar from "../components/TabBar.vue";
+</script>
 
 <style lang="scss" scoped></style>

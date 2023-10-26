@@ -1,7 +1,7 @@
 <template>
   <div class="feature">
     <!-- <img src="../assets/home/innovative.webp" alt="" /> -->
-    <img class="container" :src="img" alt="" />
+    <img :src="img" alt="" />
     <div class="body">
       <h4>{{ title }}</h4>
       <p>{{ desc }}</p>
@@ -34,6 +34,7 @@ defineProps({
   height: 100%;
   border-radius: 8px;
   background-color: rgba(51, 63, 103, 0.9);
+
   &:hover {
     transform: translateY(-2px);
     filter: brightness(117.5%);
@@ -53,6 +54,7 @@ defineProps({
   }
   h4 {
     margin-bottom: 10px;
+    color: white;
   }
   p {
     color: lightsteelblue;

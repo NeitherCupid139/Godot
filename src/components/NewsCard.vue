@@ -35,7 +35,7 @@ defineProps({
 });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 article {
   display: grid;
   gap: 20px;
@@ -59,11 +59,11 @@ article {
         size: 22px;
         // family: "Roboto";
       }
-      color: hsla(200, 00%, 100%, 0.85);
+      color: #546b99;
       margin-top: 0px;
     }
     p {
-      color: hsla(0, 0%, 100%, 0.9);
+      color: #4a5365;
       font-size: 16px;
       opacity: 0.8;
       margin-top: 0;

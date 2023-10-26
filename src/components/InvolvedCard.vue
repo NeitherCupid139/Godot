@@ -3,7 +3,10 @@
     <img :src="img" alt="" />
     <h4>{{ title }}</h4>
     <p>{{ desc }}</p>
-    <DefaultButton>Learn More</DefaultButton>
+
+    <DefaultButton class="m-auto w-50" text-color="hsl(206, 58%, 50%)"
+      >Learn More</DefaultButton
+    >
   </div>
 </template>
 
@@ -36,10 +39,14 @@ div {
     height: 250px;
   }
   h4 {
+    color: #546b99;
     font-size: 22px;
   }
   p {
-    color: white;
+    color: #4a5365;
+  }
+  m-auto {
+    margin: 0 auto;
   }
 }
 </style>

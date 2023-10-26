@@ -9,8 +9,12 @@
               The Godot Engine is a free, all-in-one, cross-platform game engine
               that makes it easy for you to create 2D and 3D games.
             </p>
-            <div class="download d-flex align-items-start">
-              <div class="left d-flex flex-column">
+            <div
+              class="download d-flex justify-content-sm-center justify-content-lg-start flex-wrap"
+            >
+              <div
+                class="left d-flex justify-content-sm-center flex-wrap flex-md-column"
+              >
                 <DownloadButton hint="4.1.1">Download Latest</DownloadButton>
                 <DownloadButton hint="3.5.3" :default-color="false"
                   >Download LTS
@@ -24,39 +28,44 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section container padded">
       <h2>Latest news</h2>
-      <div class="news d-flex">
+      <div class="news row row-cols-lg-2">
         <div class="news-left">
           <NewsCard
             img=""
             title="Maintenance release: Godot 4.1.2"
-            desc="As Godot 4.2 enters feature freeze this week, a new Godot 4.1 maintenance release arrives with a handful of improvements to stability and performance!"
+            desc="As Godot 4.2 enters feature freeze this week, a new Godot 4.1 maintenance relea"
             :responsive="false"
           ></NewsCard>
         </div>
-        <div class="newslist">
+        <div class="newslist row rows-lg-3 gap-3">
           <NewsCard
             title="Dev snapshot: Godot 4.2 dev 6"
             desc="Final 4.2 dev snapshot before we enter the beta phase, and it's absolutely feature-packed!"
           ></NewsCard>
           <NewsCard
-            title="Release candidate: Godot 4.1.2 RC 1"
-            desc="It's long overdue for the second Godot 4.1 patch release! This release candidate contains a number o..."
+            title="Release candidate: Godot 4.1.2"
+            desc="With all planned major and minor features implemented, Godot 4.2 is ready for "
           ></NewsCard>
           <NewsCard
             title="Release candidate: Godot 4.1.2 RC 1"
             desc="It's long overdue for the second Godot 4.1 patch release! This release candidate contains a number o..."
           ></NewsCard>
-          <div class="btnContainer">
-            <DefaultButton>More News</DefaultButton>
+          <div class="d-flex justify-content-md-end justify-content-sm-start">
+            <DefaultButton
+              bg-color="white"
+              text-color="#546b99"
+              class="w-sm-75 w-md-25 h-75"
+              >More News</DefaultButton
+            >
           </div>
         </div>
       </div>
     </section>
-    <section class="container">
+    <section class="container section padded">
       <h2>A different way to make games</h2>
-      <div class="row row-cols-md-3 row-cols-sm-1">
+      <div class="featureList">
         <FeatureCard
           v-for="item in featureList"
           :title="item.title"
@@ -64,67 +73,78 @@
           :img="item.img"
         ></FeatureCard>
       </div>
-    </section>
-    <section>
-      <div class="btn">
-        <DefaultButton>Learn more about using Godot</DefaultButton>
+      <div class="container d-flex justify-content-center mt-3">
+        <DefaultButton class="w-md-50 w-sm-75"
+          >Learn more about using Godot</DefaultButton
+        >
       </div>
     </section>
-    <section class="container">
+    <section class="container section padded">
       <h2>Get involved</h2>
       <p>
         Join the community and help create a game engine that belongs to
         everybody.
       </p>
-      
-        <div class=" row row-cols-md-3 row-cols-sm-1">
+
+      <div class="involve">
         <InvolvedCard
+          class="col"
           v-for="item in involvedList"
           :title="item.title"
           :desc="item.desc"
           :img="item.img"
         ></InvolvedCard>
-     
       </div>
     </section>
-    <section id="donations" class="container">
-      <div class="row row-cols-md-1 d-flex justify-content-center flex-wrap">
-        <img
-          style="width: 400px; display: block"
-          src="/home/godot-foundation-logo-dark.svg"
-          alt=""
-        />
-        <p style="display: block">
+
+    <section id="donations" class="container-fluid padded">
+      <div class="d-flex flex-column align-items-center">
+        <img src="/home/godot-foundation-logo-dark.svg" alt="" />
+        <p>
           You don't need to be an engine developer to help Godot. Join the
-          development fund and help us make the Godot Engine even more awesome!
+          <u>development fund</u> and help us make the Godot Engine even more
+          awesome!
         </p>
         <DefaultButton>Donate</DefaultButton>
       </div>
     </section>
-    <section class="container">
+    <section class="container section padded">
       <h2>Godot is sponsored by:</h2>
       <h3>Patron</h3>
-      
-        <div class="row row-cols-md-2 row-cols-sm-1">
-          <img class="col" src="/home/ossc-logo.svg" alt="" />
-          <img class="col" src="/home/re-logic.png" alt="" />
-        
+
+      <div class="patron spomsor-sm">
+        <img class="sponsor" src="/home/ossc-logo.svg" alt="" />
+        <img class="sponsor" src="/home/re-logic.png" alt="" />
       </div>
 
       <h3>Sponsor Platinum</h3>
-      <div class="container">
-        <div class="row row-cols-md-3 row-cols-sm-1">
-          <img class="col" src="/home/spiffcode.png" alt="" />
-          <img class="col" src="/home/heroiclabs.png" alt="" />
-          <img class="col" src="/home/w4.png" alt="" />
-          <img class="col" src="/home/ramatak.png" alt="" />
-        </div>
+
+      <div class="platinum spomsor-sm">
+        <img class="sponsor" src="/home/spiffcode.png" alt="" />
+        <img class="sponsor" src="/home/heroiclabs.png" alt="" />
+        <img class="sponsor" src="/home/w4.png" alt="" />
+        <img class="sponsor" src="/home/ramatak.png" alt="" />
       </div>
       <h3>Sponsor Gold</h3>
+      <div class="gold spomsor-sm">
+        <img class="sponsor" src="/home/pt.png" alt="" />
+        <img class="sponsor" src="/home/robot-gentleman.png" alt="" />
+      </div>
       <h3>Sponsor Silver</h3>
+      <div class="silver spomsor-sm">
+        <img class="sponsor" src="/home/affray-interactive.png" alt="" />
+        <img class="sponsor" src="/home/playful-studios.png" alt="" />
+        <img class="sponsor" src="/home/gamblify.png" alt="" />
+        <img class="sponsor" src="/home/orbital-knight.png" alt="" />
+        <img class="sponsor" src="/home/broken-rules.svg" alt="" />
+        <img class="sponsor" src="/home/chasing-carrots.webp" alt="" />
+      </div>
+      <p style="margin: 20px 0 10px">
+        If you want to sponsor the project, please write to
+        <u>contact@godot.foundation</u>.
+      </p>
     </section>
   </main>
-  
 </template>
 
 <script setup>
@@ -184,19 +204,72 @@ const involvedList = [
 ];
 </script>
 
-<style lang="scss" scoped>
-p {
-  color: white;
+<style lang="scss">
+.section {
+  max-width: 1200px;
 }
+#donations {
+  p {
+    max-width: 500px;
+    color: lightsteelblue;
+    u {
+      color: #3689c9;
+    }
+  }
+}
+
+.sponsor {
+  mix-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+  max-height: 100px;
+  background-color: rgb(209, 219, 227);
+  border-radius: 8px;
+  padding: 17px;
+  object-fit: contain;
+  &:hover {
+    filter: brightness(117.5%);
+  }
+}
+
+.patron {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.platinum {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.gold {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  .sponsor {
+    background-color: rgb(224, 223, 213);
+  }
+}
+.silver {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  .sponsor {
+    background-color: rgb(227, 227, 227);
+  }
+}
+.featureList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
 .padded {
   padding-top: 64px;
   padding-bottom: 64px;
 }
 main {
   position: relative;
-  section {
-    background-color: #25282b;
-  }
   .hero {
     z-index: 1;
     width: 100%;
@@ -210,6 +283,7 @@ main {
       background-size: cover;
       background-position: center center;
       background-blend-mode: darken;
+      // background-color: rgb(51, 63, 103, 0.4);
     }
     .wrapper {
       max-width: 1200px;
@@ -217,76 +291,83 @@ main {
       height: 100%;
       padding: 200px 20px 120px;
 
-      
-        h1 {
-          font-size: 60px;
-          text-shadow: 0 0 28px #00000080;
-          margin-bottom: 20px;
-          color: white;
-          font-weight: bold;
+      h1 {
+        max-width: 670px;
+        font-size: 60px;
+        text-shadow: 0 0 28px #00000080;
+        margin-bottom: 20px;
+        color: white;
+        font-weight: bold;
+      }
+      p {
+        max-width: 600px;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+
+        text-shadow: 0 0 28px #00000080;
+        color: white;
+      }
+      .download {
+        margin-top: 48px;
+        gap: 48px;
+        .left {
+          gap: 24px;
         }
-        p {
-          font-size: 20px;
-          line-height: 1.5;
-          margin-bottom: 20px;
-          max-width: 550px;
-          text-shadow: 0 0 28px #00000080;
-          color: white;
-        }
-        .download {
-          margin-top: 48px;
-          gap: 48px;
-          .left {
-            gap: 24px;
-          }
-        }
-      
-    }
-  }
-  .section {
-    gap: 30px;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    width: 1200px;
-    max-width: 1200px;
-    margin: auto;
-    overflow: visible;
-  }
-  .news {
-    // background-color: aqua;
-    gap: 30px;
-    .news-left {
-      flex: 1;
-    }
-    .newslist {
-      flex: 1;
-      // background-color: red;
-      display: grid;
-      gap: 18px;
-      .btnContainer {
-        // background-color: aquamarine;
-        display: flex;
-        justify-content: flex-end;
       }
     }
   }
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
 
-  .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-  }
-  .involved {
-    display: flex;
-  }
   #donations {
     background-color: #263256;
+    p {
+      text-align: center;
+      color: #4a5365;
+    }
+    u {
+      color: hsl(206, 58%, 50%);
+    }
+    img {
+      width: 400px;
+    }
+  }
+}
+.involve {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1200px) {
+  .hero {
+    h1 {
+      font-size: 40px !important;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .featureList {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .involve {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .spomsor-sm {
+    grid-template-columns: 1fr !important;
+  }
+
+  .newslist {
+    article {
+      grid-template-columns: 80px 1fr !important;
+      grid-column-gap: 10px;
+      .left {
+        width: 80px;
+      }
+      p {
+        display: none;
+      }
+    }
   }
 }
 </style>
