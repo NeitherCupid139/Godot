@@ -28,6 +28,7 @@
         </div>
       </div>
     </section>
+    <!-- 英雄页 -->
     <section class="section container padded">
       <h2>Latest news</h2>
       <div class="news row row-cols-lg-2">
@@ -63,6 +64,7 @@
         </div>
       </div>
     </section>
+    <!-- 新闻 -->
     <section class="container section padded">
       <h2>A different way to make games</h2>
       <div class="featureList">
@@ -79,6 +81,7 @@
         >
       </div>
     </section>
+    <!-- 特性 -->
     <section class="container section padded">
       <h2>Get involved</h2>
       <p>
@@ -96,7 +99,7 @@
         ></InvolvedCard>
       </div>
     </section>
-
+    <!-- 参与 -->
     <section id="donations" class="container-fluid padded">
       <div class="d-flex flex-column align-items-center">
         <img src="/home/godot-foundation-logo-dark.svg" alt="" />
@@ -108,6 +111,7 @@
         <DefaultButton>Donate</DefaultButton>
       </div>
     </section>
+    <!-- 捐赠 -->
     <section class="container section padded">
       <h2>Godot is sponsored by:</h2>
       <h3>Patron</h3>
@@ -144,6 +148,7 @@
         <u>contact@godot.foundation</u>.
       </p>
     </section>
+    <!-- 赞助 -->
   </main>
 </template>
 
@@ -205,6 +210,7 @@ const involvedList = [
 </script>
 
 <style lang="scss">
+// 每个页面都有的样式
 .section {
   max-width: 1200px;
 }
@@ -217,7 +223,7 @@ const involvedList = [
     }
   }
 }
-
+// 赞助
 .sponsor {
   mix-blend-mode: multiply;
   width: 100%;
@@ -231,7 +237,6 @@ const involvedList = [
     filter: brightness(117.5%);
   }
 }
-
 .patron {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -258,16 +263,18 @@ const involvedList = [
     background-color: rgb(227, 227, 227);
   }
 }
+// 功能列表
 .featureList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
 }
-
+//  上下间距
 .padded {
   padding-top: 64px;
   padding-bottom: 64px;
 }
+//
 main {
   position: relative;
   .hero {
@@ -280,11 +287,13 @@ main {
       height: 100%;
       background-image: url("../assets/images/primal-light-1.png");
       background-attachment: fixed;
+      // 视差
       background-size: cover;
       background-position: center center;
       background-blend-mode: darken;
       // background-color: rgb(51, 63, 103, 0.4);
     }
+
     .wrapper {
       max-width: 1200px;
       margin: 0 auto;
@@ -336,6 +345,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+// 参与
 @media (max-width: 1200px) {
   .hero {
     h1 {
@@ -343,6 +353,7 @@ main {
     }
   }
 }
+// 英雄页
 @media (max-width: 992px) {
   .featureList {
     grid-template-columns: 1fr;
@@ -352,6 +363,7 @@ main {
     grid-template-columns: 1fr;
   }
 }
+// 特性
 @media (max-width: 768px) {
   .spomsor-sm {
     grid-template-columns: 1fr !important;
@@ -369,5 +381,7 @@ main {
       }
     }
   }
+  // 新闻
 }
+// 移动端
 </style>

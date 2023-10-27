@@ -1,4 +1,5 @@
 <template>
+  <!-- 导航栏 -->
   <nav
     :class="[
       'navbar',
@@ -12,6 +13,7 @@
         logoDisplay ? 'background-color: transparent' : 'white !important'
       "
     >
+      <!-- logo图标 -->
       <RouterLink to="/" class="navbar-brand">
         <img
           v-show="!logoDisplay"
@@ -26,6 +28,7 @@
           height="48"
           alt=""
       /></RouterLink>
+      <!-- 导航栏按钮 -->
       <button
         @click="
           logoDisplay = !logoDisplay;
@@ -55,7 +58,7 @@
             <RouterLink to="/blog" class="nav-link">Blog</RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Commnity</a>
+            <RouterLink to="/community" class="nav-link">Community</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink to="/about" class="nav-link">About</RouterLink>

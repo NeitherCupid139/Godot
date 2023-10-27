@@ -1,6 +1,5 @@
 <template>
   <div class="feature">
-    <!-- <img src="../assets/home/innovative.webp" alt="" /> -->
     <img :src="img" alt="" />
     <div class="body">
       <h4>{{ title }}</h4>

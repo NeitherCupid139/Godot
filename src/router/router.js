@@ -16,11 +16,17 @@ const routes = [
     path: "/",
     name: "Home",
     component: HomePage,
+    meta: {
+      title: "Godot Engine - Free and open source 2D and 3D game engine",
+    },
   },
   {
     path: "/about",
     name: "About",
     component: AboutPage,
+    meta: {
+      title: "About - Godot Engine",
+    },
     redirect: "/about1",
     children: [
       {
@@ -60,16 +66,25 @@ const routes = [
     path: "/features",
     name: "Features",
     component: FeaturesPage,
+    meta: {
+      title: "Features - Godot Engine",
+    },
   },
   {
     path: "/community",
     name: "Community",
     component: CommunityPage,
+    meta: {
+      title: "Community - Godot Engine",
+    },
   },
   {
     path: "/blog",
     name: "Blog",
     component: BlogPage,
+    meta: {
+      title: "Blog - Godot Engine",
+    },
   },
 ];
 
@@ -77,5 +92,8 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
 });
-
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title; // 设置标题为当前路由的 meta.title 字段
+  next();
+});
 export default router;
